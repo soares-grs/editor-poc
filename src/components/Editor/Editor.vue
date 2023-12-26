@@ -1,9 +1,7 @@
 <template>
     <h1>Editor</h1>
     <textarea :value="input" @input="updateMarkdown($event.target.value)"></textarea>
-    <div>
-        <div v-html="compiledMarkdown"></div>
-    </div>
+    <div class="prose lg:prose-xl" v-html="compiledMarkdown"></div>
 </template>
 
 <script setup>
@@ -17,6 +15,6 @@ const content = ref('');
 
 function updateMarkdown(event) {
   input.value = event;
-  console.log("CHAMA", input.value)
 }
+
 </script>
