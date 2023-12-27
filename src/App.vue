@@ -1,5 +1,7 @@
 <template>
-  <Editor />
+  <div class="flex justify-center items-center h-screen">
+    <Editor />
+  </div>
 </template>
 
 <script setup>
